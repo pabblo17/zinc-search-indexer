@@ -1,0 +1,10 @@
+package customer
+
+import (
+	"github.com/pabblo17/ChallengeGo/indexer/aggregate"
+)
+
+type CustomerRepository interface {
+	Add(aggregate.mail) error
+	CreateMailIndex() error
+}
